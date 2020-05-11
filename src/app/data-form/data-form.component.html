@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-12 col-md-3">
+    <div class="card-cadastro">
+      <div class="card-cadastro-body">
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <button class="btn-git-hub">
+              Cadastrar com GitHub <i class="fab fa-github"></i>
+            </button>
+          </div>
+          <div class="form-group">
+            <label>Usuário GitHub</label>
+            <input type="text" class="form-dev disabled" disabled />
+          </div>
+          <div class="separator-form"></div>
+          <div class="form-group" [ngClass]="cssErro('nome')">
+            <label class="control-label">Nome</label>
+            <input type="text" class="form-dev" formControlName="nome" />
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="text" class="form-dev" formControlName="email" />
+          </div>
+          <div class="form-group">
+            <label>Cidade</label>
+            <input type="text" class="form-dev" />
+          </div>
+          <div class="separator-form"></div>
+          <div class="form-group">
+            <label>Formação Acadêmica</label>
+            <input type="text" class="form-dev" />
+          </div>
+          <div class="form-group">
+            <label>Habilidades</label>
+            <input type="text" class="form-dev" />
+          </div>
+          <div class="form-group mb-0">
+            <button type="submit" class="btn-save">
+              CADASTRAR <i class="fas fa-save"></i>
+            </button>
+          </div>
+          <app-form-debug [form]="formulario"></app-form-debug>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-9">
+    <div class="body-cadastro">
+      <!-- cards de dev cadastrados -->
+    </div>
+  </div>
+</div>

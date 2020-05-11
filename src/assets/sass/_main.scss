@@ -1,0 +1,9 @@
+@import 'abstracts/variables', 'abstracts/mixins', 'abstracts/functions';
+
+@import 'base/reset', 'base/typography';
+
+@import 'layout/menu', 'layout/footer';
+
+@import 'components/buttons', 'components/inputs', 'components/cards';
+
+@import 'pages/cadastro';

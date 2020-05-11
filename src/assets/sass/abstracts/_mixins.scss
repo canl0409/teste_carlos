@@ -1,0 +1,22 @@
+@mixin bg-gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}
+
+@mixin border-radius($tl:null, $tr:null, $br:null, $bl:null, $b: null, $bt: null, $bc: null) {
+  border: $b $bt $bc !important;
+  -webkit-border-top-left-radius: $tl;
+  -moz-border-top-left-radius: $tl;
+  border-top-left-radius: $tl;
+  -webkit-border-top-right-radius: $tr;
+  -moz-border-top-right-radius: $tr;
+  border-top-right-radius: $tr;
+  -webkit-border-bottom-right-radius: $br;
+  -moz-border-bottom-right-radius: $br;
+  border-bottom-right-radius: $br;
+  -webkit-border-bottom-left-radius: $bl;
+  -moz-border-bottom-left-radius: $bl;
+  border-bottom-left-radius: $bl;
+}

@@ -1,0 +1,59 @@
+.navbar {
+  $listGradient: #00b69f, #4c77a8;
+  @include bg-gradient(90deg, $listGradient);
+  min-height: 70px;
+  padding: 0 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1071;
+
+  a {
+    color: #ffffff !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+
+    span {
+      color: #ffffff !important;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 100;
+    }
+  }
+
+  input {
+    background-color: rgba($color: #fff, $alpha: 0.3);
+    min-width: 400px;
+    height: 42px;
+    border-radius: 20px;
+    color: #ffffff !important;
+    font-size: 16px;
+    float: left;
+    padding-right: 40px;
+
+    &:focus {
+      background-color: rgba($color: #ffffff, $alpha: 0.3);
+    }
+  }
+
+  #lupa {
+    float: left;
+    margin-left: -30px;
+    height: 42px;
+  }
+
+  #lupa:after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 900;
+    color: rgba($color: #ffffff, $alpha: 0.5);
+    content: "\f002";
+  }
+
+  ::-webkit-input-placeholder,
+  :-ms-input-placeholder,
+  ::placeholder {
+    color: rgba($color: #ffffff, $alpha: 0.5);
+  }
+}

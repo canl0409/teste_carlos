@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" [routerLink]="['dataForm']" routerLinkActive="active">
+    Cadastro<span>Dev</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="ml-auto">
+      <input class="form-control" type="text" placeholder="Buscar..." aria-label="Buscar" />
+      <div id="lupa"></div>
+    </form>
+  </div>
+</nav>
+<router-outlet></router-outlet>

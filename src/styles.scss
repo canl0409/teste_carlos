@@ -1,0 +1,18 @@
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import "./assets/sass/_main.scss";
+
+*,
+html {
+  font-family: "Open Sans", sans-serif;
+  color: $color-text-2;
+}
+
+body {
+  $listGradient: $color-theme 0%, $color-roxo 90%;
+  @include bg-gradient(to bottom right, $listGradient);
+  background-attachment: fixed;
+  min-height: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
